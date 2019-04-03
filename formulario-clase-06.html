@@ -13,6 +13,26 @@
         color: royalblue;
         background-color: pink;
         font-size: 25px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      titulo-de-producto {
+        display: inline;
+        color: brown;
+        background-color: yellowgreen;
+        font-size: 25px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      titulo-datos-envio {
+        display: inline;
+        color: orangered;
+        background-color: violet;
+        font-size: 25px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
       }
     </style>
   </head>
@@ -90,6 +110,116 @@
         />
         <br />
       </fieldset>
+
+      <br />
+      <fieldset>
+        <legend>
+          <titulo-de-producto>Producto que desea declarar</titulo-de-producto>
+        </legend>
+        <label for="nombre-del-producto">Nombre del Producto</label>
+        <input
+          id="nombre-del-producto"
+          type="text"
+          placeholder="Nombre del Producto"
+        />
+        <br />
+        <!-- tipo de producto -->
+        <label for="tipo-de-producto">Tipo de producto</label>
+
+        <select name="tipo-de-producto" id="tipo-de-producto">
+          <option value="selecciona-tipo-de-prodcuto"
+            >Seleccciona tipo de producto</option
+          >
+          <option value="Vajilla">Vajilla</option>
+          <option value="Electrodomestico">Electrodomestico</option>
+          <option value="Entretenimiento">Entretenimiento</option>
+          <option value="Belleza">Belleza</option>
+          <option value="Otro">Otro</option>
+        </select>
+        <!-- fin tipo de producto -->
+        <br />
+        <label for="color-producto">Color del producto</label>
+        <input
+          id="color-producto"
+          type="color"
+          placeholder="Color de producto"
+        />
+        <br />
+        <label for="foto-producto">Foto del Producto</label>
+        <input id="foto-producto" type="file" placeholder="Foto del producto" />
+
+        <br />
+        <label for="fecha-de-compra">Fecha de Compra</label>
+        <input id="fehca-de-compra" type="date" placeholder="Fecha de Compra" />
+
+        <br />
+        <label for="fabricante">Nombre del Fabricante</label>
+        <input
+          id="fabricante"
+          type="text"
+          placeholder="Nombre del Fabricante"
+        />
+
+        <br />
+        <label for="peso-producto">Peso del Producto</label>
+        <input id="peso-producto" type="number" placeholder="Peso en kg" />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>
+          <titulo-datos-envio>Datos de Envio</titulo-datos-envio>
+        </legend>
+
+        <label for="nombre-calle">Nombre de Calle</label>
+        <input id="nombre-calle" type="text" placeholder="Nombre de Calle" />
+        <br />
+
+        <label for="numero-calle">Numero</label>
+        <input id="numero-calle" type="number" placeholder="Numero de calle" />
+        <br />
+
+        <label for="entre-calles">Entre calles</label>
+        <input id="entre-calles" type="text" placeholder="Entre calles" />
+        <br />
+
+        <label for="fecha-entres">Fecha de Entrega</label>
+        <input id="fecha-entrega" type="week" placeholder="Fecha de Entrega" />
+        <br />
+
+        <label for="telefono-contacto">Telefono de Contacto</label>
+        <input
+          id="telefono-contacto"
+          type="tel"
+          placeholder="Telefono de contacto"
+        />
+        <br />
+
+        <label for="email-facturacion">Email Facturacion</label>
+        <input
+          id="email-facturacion"
+          type="email"
+          placeholder="Email de Facturacion"
+        />
+        <br />
+
+        <label for="dni-fotocopia">Fotocopia de Documento de Identidad</label>
+        <input
+          id="dni-fotocopia"
+          type="file"
+          placeholder="Fotocopia de documento de Identidad"
+        />
+        <br />
+
+        <label for="recibe-titular">Solamente recibe el titular</label>
+        <input
+          id="recibe-titular"
+          type="checkbox"
+          placeholder="Solamente recibe el titular"
+        />
+      </fieldset>
+
+      <br />
     </form>
     <!-- Fin contenido -->
   </body>
